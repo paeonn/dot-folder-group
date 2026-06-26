@@ -1,0 +1,2 @@
+# dot-folder-group
+JUST IGNORE THAT FOLDERS BRUH
