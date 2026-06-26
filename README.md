@@ -34,6 +34,11 @@ Tired of scrolling past a wall of dot-folders at the top of your file tree? **Do
 - **Refresh Dot Folders** — refresh icon in the view title bar
 - **Dot Folder Group: Toggle Hide Dot-Folders in Explorer** — toggle visibility in the default Explorer
 - **Reveal in Dot Folder Group** — right-click a dot-folder in the Explorer to focus it in the group
+- **Dot Folder Group: Restore Explorer** — instantly bring every hidden dot-folder back to the default Explorer (run this before uninstalling to guarantee a clean restore)
+
+## Uninstalling
+
+The extension automatically restores the default Explorer on deactivation. Since editors do not always flush settings writes during uninstall, you can run **Dot Folder Group: Restore Explorer** first to guarantee every dot-folder is unhidden before removing the extension.
 
 ## Local development
 
@@ -55,7 +60,7 @@ Add to `.vscode/extensions.json`:
 
 ```json
 {
-  "recommendations": ["Paeon.dot-folder-group"]
+  "recommendations": ["paeonn.dot-folder-group"]
 }
 ```
 

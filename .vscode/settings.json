@@ -5,6 +5,8 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
+        ".tests": true,
         ".vscode": true
-    }
+    },
+    "dotFolderGroup.hideInExplorer": true
 }

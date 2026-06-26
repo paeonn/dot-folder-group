@@ -2,10 +2,18 @@
   "name": "dot-folder-group",
   "displayName": "Dot Folder Group",
   "description": "Keep your Explorer clean by grouping all dot-folders (.vscode, .github, .cursor...) under a single collapsible node.",
-  "version": "0.1.3",
-  "publisher": "Paeon",
+  "version": "0.1.8",
+  "publisher": "paeonn",
   "license": "MIT",
   "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paeonn/dot-folder-group.git"
+  },
+  "homepage": "https://github.com/paeonn/dot-folder-group#readme",
+  "bugs": {
+    "url": "https://github.com/paeonn/dot-folder-group/issues"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -63,12 +71,22 @@
       {
         "command": "dotFolderGroup.revealInGroup",
         "title": "Reveal in Dot Folder Group"
+      },
+      {
+        "command": "dotFolderGroup.restoreExplorer",
+        "title": "Dot Folder Group: Restore Explorer",
+        "icon": "$(discard)"
       }
     ],
     "menus": {
       "view/title": [
         {
           "command": "dotFolderGroup.refresh",
+          "when": "view == dotFolderGroup.explorer",
+          "group": "navigation"
+        },
+        {
+          "command": "dotFolderGroup.restoreExplorer",
           "when": "view == dotFolderGroup.explorer",
           "group": "navigation"
         }
